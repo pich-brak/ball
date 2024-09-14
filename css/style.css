@@ -1,0 +1,61 @@
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 4fr ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'header header header'
+                          'Navagation Navagation Navagation'
+                          'search main main'
+                          'search comments comments'
+                          'footer footer footer';
+}
+.container>div{
+    padding: 15px;
+}
+.header{
+    grid-area: header;
+    background: black;
+    color: #fff;
+}
+.Navagation{
+    grid-area: Navagation;
+    background: #909090;
+    color: #fff;
+    
+
+}
+.search{
+    grid-area: search;
+    background: #B4B4B4;
+    height: 200px;
+}
+.main{
+    grid-area: main;
+    background: #B4B4B4;
+    display: grid;
+    grid-template-rows: 100px;
+}
+.comments{
+    grid-area: comments;
+    background: gray;
+    display: grid;
+    grid-template-rows: 100px;
+
+}
+.footer{
+    grid-area: footer;
+    background: #636363;
+    color: white;
+}
+.search-1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #D4D4D4;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 90px;
+}
+.card search {
+    display: grid;
+
+}
